@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="solar.js"></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Solar.css">
+    <link rel="stylesheet" href="sun.css">
+    <link rel="stylesheet" href="earth.css">
+    <link rel="stylesheet" href="mercury.css">
+    <link rel="stylesheet" href="venus.css">
+    <link rel="stylesheet" href="mars.css">
+    <link rel="stylesheet" href="jupiter.css">
+    <link rel="stylesheet" href="saturn.css">
+    <link rel="stylesheet" href="uranus.css">
+    <link rel="stylesheet" href="neptune.css">
+    <title>Solar System</title>
+</head>
+<body>
+    <div class="center">
+        <div id="sun" class="planet"></div>
+        <div id="earthPath" class="path"> </div>
+        <div id="mercuryPath1" class="path"></div>
+        <div id="mercuryPath2" class="path"></div>
+        <div id="venusPath1" class="path"></div>
+        <div id="venusPath2" class="path"></div>
+        <div id="marsPath1" class="path"></div>
+        <div id="marsPath2" class="path"></div>
+        <div id="jupiterPath1" class="path"></div>
+        <div id="jupiterPath2" class="path"></div>
+        <div id="saturnPath1" class="path"></div>
+        <div id="saturnPath2" class="path"></div>
+        <div id="uranusPath1" class="path"></div>
+        <div id="uranusPath2" class="path"></div>
+        <div id="nepturePath1" class="path"></div>
+        <div id="nepturePath2" class="path"></div>
+    </div>
+    <div id="mercury" class="planet"></div>
+    <div id="venus"class="planet"></div>
+    <div id="earthS">
+        <div id="moon"></div>
+        <div id="earth"class="planet"> </div>
+    </div>
+    <div id="mars"class="planet"></div>
+    <div id="jupiter"class="planet"></div>
+    <div id="saturnS">
+        <div id="ring"class="planet"></div>
+        <div id="saturn"class="planet"></div>
+    </div>
+    <div id="uranus"class="planet"></div>
+    <div id="neptune"class="planet"></div>
+    <div id="test"class="planet"></div>
+    <nav class="button">
+            <p>@Kingsley Solar</p>
+            <span onmousemove="change()" onmouseout="recover()">Sun</span>
+    <span onmouseover="change1(this)" onmouseout="recover1(this)" onclick="go(this)">Mercury</span>
+            <span onmouseover="change1(this)" onmouseout="recover1(this)" onclick="go(this)">Venus</span>
+            <span onmouseover="change1(this)" onmouseout="recover1(this)" onclick="go(this)">Earth</span>
+            <span onmouseover="change1(this)" onmouseout="recover1(this)" onclick="go(this)">Mars</span>
+            <span onmouseover="change1(this)" onmouseout="recover1(this)" onclick="go(this)">Jupiter</span>
+            <span onmouseover="change1(this)" onmouseout="recover1(this)" onclick="go(this)">Saturn</span>
+            <span onmouseover="change1(this)" onmouseout="recover1(this)" onclick="go(this)">uranus</span>
+            <span onmouseover="change1(this)" onmouseout="recover1(this)" onclick="go(this)">Neptune</span>
+    </nav>
+</body>
+</html>

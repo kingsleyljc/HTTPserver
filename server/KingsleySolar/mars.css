@@ -1,0 +1,54 @@
+#marsPath1{
+    border: 0.2vw dotted white;
+
+    border-bottom-width:0; 
+	width: 50%;
+	height: 50%;
+	margin: auto;	
+	border-radius: 100%;
+    transform: rotateX(60deg);
+    position: absolute;
+ }
+ #marsPath2{
+    border: 0.2vw dotted white;
+
+    border-top-width:0; 
+	width: 50%;
+	height: 50%;
+	margin: auto;	
+	border-radius: 100%;
+    transform: rotateX(60deg);
+    position: absolute;
+   z-index: 139;
+ }
+ #mars{
+	background:url(mars.jpg);
+	background-size: 200%;
+	background-position:-20px 0;
+	border-radius: 100%;
+    height:1.7vw;width:1.7vw;
+	position: absolute;
+    animation: rotate 2s linear infinite;
+    animation: 
+    animXmars 8s cubic-bezier(0.36, 0, 0.64, 1) infinite alternate,
+    animYmars 8s cubic-bezier(0.36, 0, 0.64, 1) -4s infinite  alternate,
+    scale 16s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite normal,
+    xIndex_mars 16s linear  infinite normal;
+ }
+ @keyframes xIndex_mars{
+    0%{z-index:170; }
+   25%{z-index:170; }
+   60%{z-index:149; }
+   80%{z-index:149;}
+    
+   100%{z-index:170; }
+}
+
+@keyframes animXmars{
+   0% {left: 24%;}
+ 100% {left: 74%;}
+}
+@keyframes animYmars{
+   0% {top: 35%;}
+ 100% {top: 61%;}
+}

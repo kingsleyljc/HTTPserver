@@ -1,0 +1,54 @@
+#mercuryPath1{
+    border: 0.2vw dotted white;
+    border-bottom-width:0; 
+	width: 20%;
+	height: 20%;
+	margin: auto;	
+	border-radius: 100%;
+    transform: rotateX(60deg);
+    position: absolute;
+    z-index: 149;
+ }
+ #mercuryPath2{
+    border: 0.2vw dotted white;
+    border-top-width:0; 
+	width: 20%;
+	height: 20%;
+	margin: auto;	
+	border-radius: 100%;
+    transform: rotateX(60deg);
+    position: absolute;
+    z-index: 150;
+ }
+ #mercury{
+	background:url(mercury.jpg);
+	background-size: 200%;
+	background-position:-20px 0;
+	border-radius: 100%;
+    height:0.8vw;width:0.8vw;
+    position: absolute;
+    animation: rotate 2s linear infinite;
+    animation: 
+    animXmercury 1s cubic-bezier(0.36, 0, 0.64, 1) infinite alternate,
+    animYmercury 1s cubic-bezier(0.36, 0, 0.64, 1) -0.5s infinite  alternate,
+    scale 2s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite normal,
+    xindex_mer 2s linear  infinite normal;
+ }
+ @keyframes xindex_mer{
+    0%{z-index:170; }
+   25%{z-index:170; }
+   65%{z-index:170; }
+   75%{z-index:2;}
+   78%{z-index:2;}
+   85%{z-index:170;}
+   100%{z-index:170; }
+}
+
+@keyframes animXmercury{
+    0% {left: 39.5%;}
+  100% {left: 59.5%;}
+ }
+ @keyframes animYmercury{
+    0% {top: 44.6%;}
+  100% {top: 54.5%;}
+ }
